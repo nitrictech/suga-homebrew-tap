@@ -5,23 +5,23 @@
 class Suga < Formula
   desc "Suga CLI"
   homepage "https://app.addsuga.com/"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache 2.0"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nitrictech/suga/releases/download/v0.0.3/suga_0.0.3_darwin_amd64.tar.gz"
-      sha256 "ce57b3196fcee6f329baf8854f0913ba7d622ac54ee4fad59762a8cfd07d6a4b"
+      url "https://github.com/nitrictech/suga/releases/download/v0.0.4/suga_0.0.4_darwin_amd64.tar.gz"
+      sha256 "5fa5a35e0a4519b7a2ca666e70731e81c3bfe9b9a9e88903078c2c645cabacc5"
 
       def install
         bin.install "suga"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nitrictech/suga/releases/download/v0.0.3/suga_0.0.3_darwin_arm64.tar.gz"
-      sha256 "0017b44fe90ddfa290a9410f262cc2c7417aad9158b23e4ab3a0b360edd72798"
+      url "https://github.com/nitrictech/suga/releases/download/v0.0.4/suga_0.0.4_darwin_arm64.tar.gz"
+      sha256 "f1d7e055509ae7fc233b4bc70a251f751d933bb5121c1125cb285f5c28256888"
 
       def install
         bin.install "suga"
@@ -30,16 +30,16 @@ class Suga < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nitrictech/suga/releases/download/v0.0.3/suga_0.0.3_linux_amd64.tar.gz"
-      sha256 "1e7efa29f08dfed2ea1a0ec780261f9421a8ffe8b6fe3961a6cc320e0909255b"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/nitrictech/suga/releases/download/v0.0.4/suga_0.0.4_linux_amd64.tar.gz"
+      sha256 "f0da0a43e2b0d059a9ffcfa5f068305233275a29c76b2a7f3524b68b8b91d5fe"
       def install
         bin.install "suga"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nitrictech/suga/releases/download/v0.0.3/suga_0.0.3_linux_arm64.tar.gz"
-      sha256 "991f912504a80d608cc7c1bbbc043c55ab7a2293bbd09774e5daa0205c0daaa0"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/nitrictech/suga/releases/download/v0.0.4/suga_0.0.4_linux_arm64.tar.gz"
+      sha256 "c5dfc7037d8735fd831dcb2f4bd6f4c475851182411c16699c08d41b621919cc"
       def install
         bin.install "suga"
       end
